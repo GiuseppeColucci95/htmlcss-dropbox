@@ -31,6 +31,7 @@
 
       .container-70 {
         height: 100%;
+        background-color: yellow;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -43,6 +44,29 @@
 
       .col-8 {
         height: 350px;
+        background-color: lightslategray;
+      }
+    }
+
+    #business-plan {
+      height: 1200px;
+      background-color: lightblue;
+
+      .container-60 {
+        height: 100%;
+        background-color: lightyellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .col-4 {
+        height: 650px;
+        background-color: lightslategray;
+      }
+
+      .col-12 {
+        height: 250px;
         background-color: lightslategray;
       }
     }
@@ -103,6 +127,11 @@
 
 .container-70 {
   width: 70%;
+  margin: 0 auto;
+}
+
+.container-60 {
+  width: 60%;
   margin: 0 auto;
 }
 
