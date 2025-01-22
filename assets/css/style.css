@@ -32,13 +32,17 @@
     height: 300px;
     background-color: black;
 
+    .container-70 {
+      background-color: yellow;
+    }
+
     .col {
       height: 200px;
       background-color: lightsalmon;
     }
 
     .footer-footer {
-      color: white;
+      color: black;
     }
   }
 
@@ -60,8 +64,6 @@
   align-items: center;
 }
 
-
-
 /* #endregion utilities */
 
 /* #region layout */
@@ -74,7 +76,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  /* add negative margin maybe */
+  margin: 0 -1rem;
 }
 
 [class^="col"] {
