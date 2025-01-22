@@ -108,6 +108,18 @@
       }
     }
 
+    #clients {
+      height: 300px;
+
+      .container-60 {
+        height: 100%;
+        background-color: lightyellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
 
   }
 
