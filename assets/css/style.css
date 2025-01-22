@@ -21,6 +21,11 @@
     background-color: lightgreen;
   }
 
+  section {
+    height: 500px;
+    background-color: lightblue;
+  }
+
 }
 
 /* #endregion common */
@@ -40,6 +45,12 @@
 }
 
 /* #endregion utilities */
+
+/* #region layout */
+
+
+
+/* #endregion layout */
 
 /* #region header */
 
