@@ -1,0 +1,38 @@
+/* #region common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --drop-bg-light-color: #b4d0e6;
+  --drop-bg-btn-color: #0061fe;
+}
+
+/* #endregion common */
+
+/* #region utilities */
+
+
+
+/* #endregion utilities */
+
+/* #region header */
+
+
+
+/* #endregion header */
+
+/* #region main */
+
+
+
+/* #endregion main */
+
+/* #region footer */
+
+
+
+/* #endregion footer */
