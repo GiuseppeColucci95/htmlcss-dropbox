@@ -13,6 +13,10 @@
   --drop-dark-color: black;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .debug {
 
   /* * {
@@ -25,7 +29,7 @@
 
   main {
 
-    #jumbotron {
+    /* #jumbotron {
       height: 500px;
       background-color: lightblue;
 
@@ -46,9 +50,10 @@
         height: 350px;
         background-color: lightslategray;
       }
-    }
+    } */
 
-    #business-plan {
+    /* #business-plan {
+      padding-top: 10rem;
       height: 1200px;
       background-color: lightblue;
 
@@ -69,7 +74,7 @@
         height: 250px;
         background-color: lightslategray;
       }
-    }
+    } */
 
     #partner {
       height: 500px;
@@ -179,13 +184,13 @@
 
 /* #region layout */
 
-.container-70 {
-  width: 70%;
+.container-65 {
+  width: 65%;
   margin: 0 auto;
 }
 
-.container-60 {
-  width: 60%;
+.container-50 {
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -296,6 +301,58 @@ header {
 
 /* #region main */
 
+#jumbotron {
+  background-color: var(--drop-bg-light-color);
+
+  .container-65 {
+
+    h1 {
+      padding: 5rem 0 2rem 0;
+      font-size: 5rem;
+      font-weight: 800;
+    }
+
+    .row {
+
+      .col-4 {
+        font-size: 1.05rem;
+        line-height: 1.5rem;
+
+        a.btn {
+          display: inline-block;
+          margin: 2rem 0;
+          padding: 0.5rem 1.5rem;
+        }
+
+        i {
+          color: var(--drop-dark-color);
+          font-size: 3rem;
+          padding-top: 4rem;
+        }
+      }
+
+      .col-8 {
+
+        img {
+          width: 100%;
+          margin-bottom: -8rem;
+        }
+      }
+    }
+  }
+
+
+}
+
+#business-plan {
+
+  hr {
+    margin: 8rem 0 3rem;
+    border: none;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.366);
+  }
+
+}
 
 
 /* #endregion main */
