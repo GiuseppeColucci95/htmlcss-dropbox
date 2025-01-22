@@ -27,6 +27,7 @@
 
     #jumbotron {
       height: 500px;
+      background-color: lightblue;
 
       .container-70 {
         height: 100%;
@@ -49,6 +50,7 @@
 
     #business-plan {
       height: 1200px;
+      background-color: lightblue;
 
       .container-60 {
         height: 100%;
@@ -71,6 +73,7 @@
 
     #partner {
       height: 500px;
+      background-color: lightblue;
 
       .container-60 {
         height: 100%;
@@ -93,6 +96,7 @@
 
     #operations {
       height: 800px;
+      background-color: lightblue;
 
       .container-60 {
         height: 100%;
@@ -110,6 +114,7 @@
 
     #clients {
       height: 300px;
+      background-color: lightblue;
 
       .container-60 {
         height: 100%;
@@ -119,13 +124,6 @@
         justify-content: center;
       }
     }
-
-
-  }
-
-  section {
-    height: 500px;
-    background-color: lightblue;
   }
 
   footer {
@@ -133,19 +131,18 @@
     background-color: black;
 
     .container-70 {
+      height: 100%;
       background-color: yellow;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .col {
       height: 200px;
       background-color: lightsalmon;
     }
-
-    .footer-footer {
-      color: black;
-    }
   }
-
 }
 
 /* #endregion common */
