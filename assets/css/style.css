@@ -91,6 +91,23 @@
       }
     }
 
+    #operations {
+      height: 800px;
+
+      .container-60 {
+        height: 100%;
+        background-color: lightyellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .col-4 {
+        height: 300px;
+        background-color: lightslategray;
+      }
+    }
+
 
   }
 
