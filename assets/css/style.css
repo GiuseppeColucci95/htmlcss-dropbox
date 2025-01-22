@@ -23,6 +23,31 @@
     background-color: lightgreen;
   }
 
+  main {
+
+    #jumbotron {
+      height: 500px;
+      background-color: lightblue;
+
+      .container-70 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .col-4 {
+        height: 350px;
+        background-color: lightslategray;
+      }
+
+      .col-8 {
+        height: 350px;
+        background-color: lightslategray;
+      }
+    }
+  }
+
   section {
     height: 500px;
     background-color: lightblue;
@@ -54,6 +79,14 @@
 
 .d-flex {
   display: flex;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+.jc-sa {
+  justify-content: space-around;
 }
 
 .jc-sb {
