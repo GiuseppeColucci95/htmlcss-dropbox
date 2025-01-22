@@ -11,17 +11,45 @@
   --drop-bg-btn-color: #0061fe;
 }
 
+.debug {
+
+  * {
+    border: 1px dashed;
+  }
+
+  header {
+    background-color: lightgreen;
+  }
+
+}
+
 /* #endregion common */
 
 /* #region utilities */
 
+.d-flex {
+  display: flex;
+}
 
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
 
 /* #endregion utilities */
 
 /* #region header */
 
+header {
 
+  nav {
+    height: 80px;
+    padding: 0 1.5rem;
+  }
+}
 
 /* #endregion header */
 
