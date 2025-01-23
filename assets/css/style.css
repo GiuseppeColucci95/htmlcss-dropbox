@@ -348,6 +348,7 @@ header {
 }
 
 #business-plan {
+  padding-bottom: 4rem;
 
   hr {
     margin: 8rem 0 3rem;
@@ -382,27 +383,36 @@ header {
       }
     }
 
-    .card-top {
+    .card {
+      height: 100%;
       border: 1px solid var(--drop-borders-color);
+
+      div>i {
+        padding-right: 0.5rem;
+      }
+    }
+
+    .card-top {
       text-align: center;
       padding: 0.5rem 0;
     }
 
     .card-bottom {
-      border: 1px solid var(--drop-borders-color);
-      padding: 1.5rem;
+      border-top: 1px solid var(--drop-borders-color);
+      padding: 2rem 1.5rem 3rem;
 
       .user,
       .folder,
       .share,
       .btn,
       .border-div,
-      .check {
-        font-size: 0.9rem;
+      .check,
+      .enterprise {
+        font-size: 0.88rem;
       }
 
-      div>i {
-        padding-right: 0.5rem;
+      div>a {
+        color: var(--drop-bg-btn-color);
       }
 
       h3 {
@@ -454,6 +464,35 @@ header {
       .check {
         padding: 0.5rem 0;
       }
+
+      i.fa-check {
+        display: inline-block;
+        color: var(--drop-bg-btn-color);
+        font-weight: 1000;
+      }
+
+
+      .btn-12 {
+        text-align: center;
+        padding: 0.5rem 1rem;
+
+        a {
+          padding: 0.5rem 1.5rem;
+          background-color: var(--drop-bg-btn-color);
+          text-decoration: none;
+          color: var(--drop-lighter-color);
+          font-weight: 100;
+        }
+      }
+
+      .enterprise {
+        width: 70%;
+        padding-top: 2.5rem;
+      }
+    }
+
+    .col-12 div.card-bottom {
+      padding-bottom: 2rem;
     }
   }
 
