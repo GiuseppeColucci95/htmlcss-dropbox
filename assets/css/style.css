@@ -9,6 +9,7 @@
 :root {
   --drop-bg-light-color: #b4d0e6;
   --drop-bg-btn-color: #0061fe;
+  --drop-bg-btn-hover-color: #3280ff;
   --drop-lighter-color: white;
   --drop-dark-color: black;
   --drop-hr-color: rgba(211, 211, 211, 0.366);
@@ -17,22 +18,23 @@
 }
 
 body {
+  min-width: 1440px;
   font-family: "Open Sans", sans-serif;
 }
 
 .debug {
 
-  /* * {
+  * {
     border: 1px dashed;
-  } */
+  }
 
-  /* header {
+  header {
     background-color: lightgreen;
-  } */
+  }
 
   main {
 
-    /* #jumbotron {
+    #jumbotron {
       height: 500px;
       background-color: lightblue;
 
@@ -53,9 +55,9 @@ body {
         height: 350px;
         background-color: lightslategray;
       }
-    } */
+    }
 
-    /* #business-plan {
+    #business-plan {
       padding-top: 10rem;
       height: 1200px;
       background-color: lightblue;
@@ -77,9 +79,9 @@ body {
         height: 250px;
         background-color: lightslategray;
       }
-    } */
+    }
 
-    /* #partner {
+    #partner {
       height: 500px;
       background-color: lightblue;
 
@@ -100,9 +102,9 @@ body {
         height: 300px;
         background-color: lightslategray;
       }
-    } */
+    }
 
-    /* #operations {
+    #operations {
       height: 800px;
       background-color: lightblue;
 
@@ -118,9 +120,9 @@ body {
         height: 300px;
         background-color: lightslategray;
       }
-    } */
+    }
 
-    /* #clients {
+    #clients {
       height: 300px;
       background-color: lightblue;
 
@@ -131,10 +133,10 @@ body {
         flex-direction: column;
         justify-content: center;
       }
-    } */
+    }
   }
 
-  /* footer {
+  footer {
     height: 300px;
     background-color: black;
 
@@ -150,7 +152,7 @@ body {
       height: 200px;
       background-color: lightsalmon;
     }
-  } */
+  }
 }
 
 /* #endregion common */
@@ -178,6 +180,17 @@ body {
 }
 
 .btn {
+  background-color: var(--drop-bg-btn-color);
+  color: var(--drop-lighter-color);
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--drop-bg-btn-hover-color);
+}
+
+.btn-12 {
   background-color: var(--drop-bg-btn-color);
   color: var(--drop-lighter-color);
   text-decoration: none;
@@ -267,30 +280,40 @@ body {
 header {
 
   nav {
-    height: 80px;
+    width: 100%;
+    background-color: var(--drop-lighter-color);
+    z-index: 10;
+    position: fixed;
+
     padding: 0 1.5rem;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
     .left-nav,
     .right-nav {
-      height: 100%;
       display: flex;
       align-items: center;
 
       ul {
-        height: 100%;
-        line-height: 80px;
         list-style: none;
         padding: 0 1rem;
       }
 
       li>a {
         text-decoration: none;
-        padding: 0 1rem;
         color: var(--drop-dark-color);
+      }
+
+      li {
+        padding: 1.5rem 1rem;
+        border-bottom: 2px solid transparent;
+      }
+
+      li:hover {
+        border-bottom: 2px solid;
       }
 
       .btn {
@@ -303,6 +326,10 @@ header {
 /* #endregion header */
 
 /* #region main */
+
+main {
+  padding-top: 70px;
+}
 
 #jumbotron {
   background-color: var(--drop-bg-light-color);
@@ -411,10 +438,6 @@ header {
         font-size: 0.88rem;
       }
 
-      div>a {
-        color: var(--drop-bg-btn-color);
-      }
-
       h3 {
         font-size: 1.5rem;
       }
@@ -471,18 +494,21 @@ header {
         font-size: 1rem;
       }
 
-
       .btn-12 {
         text-align: center;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 2rem;
+        background-color: var(--drop-bg-btn-color);
 
         a {
-          padding: 0.5rem 1.5rem;
-          background-color: var(--drop-bg-btn-color);
           text-decoration: none;
           color: var(--drop-lighter-color);
           font-weight: 100;
         }
+      }
+
+      .btn-12:hover {
+        cursor: pointer;
+        background-color: var(--drop-bg-btn-hover-color);
       }
 
       .enterprise {
@@ -519,6 +545,11 @@ header {
       padding: 0.5rem 1rem;
       border: 1px solid;
       color: var(--drop-dark-color);
+    }
+
+    .btn-empty:hover {
+      background-color: var(--drop-dark-color);
+      color: var(--drop-lighter-color);
     }
   }
 }
