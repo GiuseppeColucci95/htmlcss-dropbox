@@ -33,7 +33,7 @@ body {
       height: 500px;
       background-color: lightblue;
 
-      .container-70 {
+      .container-65 {
         height: 100%;
         background-color: yellow;
         display: flex;
@@ -57,7 +57,7 @@ body {
       height: 1200px;
       background-color: lightblue;
 
-      .container-60 {
+      .container-50 {
         height: 100%;
         background-color: lightyellow;
         display: flex;
@@ -80,7 +80,7 @@ body {
       height: 500px;
       background-color: lightblue;
 
-      .container-60 {
+      .container-50 {
         height: 100%;
         background-color: lightyellow;
         display: flex;
@@ -103,7 +103,7 @@ body {
       height: 800px;
       background-color: lightblue;
 
-      .container-60 {
+      .container-50 {
         height: 100%;
         background-color: lightyellow;
         display: flex;
@@ -121,7 +121,7 @@ body {
       height: 300px;
       background-color: lightblue;
 
-      .container-60 {
+      .container-50 {
         height: 100%;
         background-color: lightyellow;
         display: flex;
@@ -135,7 +135,7 @@ body {
     height: 300px;
     background-color: black;
 
-    .container-70 {
+    .container-65 {
       height: 100%;
       background-color: yellow;
       display: flex;
@@ -352,8 +352,38 @@ header {
     border-bottom: 1px solid rgba(211, 211, 211, 0.366);
   }
 
-}
+  .container-50 {
 
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .select {
+      padding: 3rem 0 2rem 0;
+
+      .monthly {
+        padding-right: 3rem;
+
+        i {
+          padding-right: 0.25rem;
+          color: var(--drop-bg-btn-color);
+        }
+      }
+
+      .annuary {
+
+        i {
+          padding-right: 0.25rem;
+          color: lightgrey;
+        }
+      }
+    }
+
+    .card-top {}
+  }
+
+
+}
 
 /* #endregion main */
 
