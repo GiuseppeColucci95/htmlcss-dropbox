@@ -134,7 +134,7 @@ body {
     } */
   }
 
-  footer {
+  /* footer {
     height: 300px;
     background-color: black;
 
@@ -150,7 +150,7 @@ body {
       height: 200px;
       background-color: lightsalmon;
     }
-  }
+  } */
 }
 
 /* #endregion common */
@@ -532,7 +532,7 @@ header {
   }
 
   .card {
-    padding: 0.5rem;
+    padding: 0 0.5rem;
   }
 
   img {
@@ -573,6 +573,42 @@ header {
 
 /* #region footer */
 
+footer {
+  background-color: var(--drop-dark-color);
+  color: var(--drop-lighter-color);
 
+  .footer-card {
+    padding: 5rem 0;
+
+    h3 {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+
+      li>a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--drop-lighter-color);
+        font-size: 1rem;
+        font-weight: 200;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .footer-footer {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: 10%;
+    padding: 3rem 0;
+    color: var(--drop-borders-color);
+    border-top: 1px solid var(--drop-hr-color);
+  }
+}
 
 /* #endregion footer */
